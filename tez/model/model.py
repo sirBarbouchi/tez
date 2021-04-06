@@ -12,8 +12,6 @@ from tez.callbacks import CallbackRunner
 from tez.utils import AverageMeter
 from tqdm import tqdm
 
-warnings.filterwarnings("ignore", message=torch.optim.lr_scheduler.SAVE_STATE_WARNING)
-
 
 class Model(nn.Module):
     def __init__(self, *args, **kwargs):
